@@ -16,7 +16,7 @@ class CartProducts(models.Model):
 
     product = models.ForeignKey('products.Products' , on_delete=models.PROTECT , related_name='allproduts')
 
-    quantity = models.IntegerField()
+    quantity = models.PositiveIntegerField()
 
     created_at = models.DateTimeField(auto_now_add=True)
 
